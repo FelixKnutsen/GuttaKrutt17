@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: antiquewhite;
+  color: #333;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+}
+
+.navbar ul li {
+  float: left;
+}
+
+.navbar ul li a {
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar ul li.right {
+  margin-left: auto;
+}
+
+.navbar ul li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.content {
+  padding: 20px;
+}
+
+.students {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.student {
+  text-align: center;
+  width: 30%;
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.student h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.student p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.group-info {
+  margin-top: 40px;
+}
+
+.group-info h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.info-category {
+  background-color: #ededed;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.info-category h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.info-category p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.scrollFunction {
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.groupTag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto; /* Legger til auto for å sentrere horisontalt */
+  background-color: #aaaaaa; /* Velger en lys blå bakgrunnsfarge */
+  width: 20%; /* Setter bredden til 20% */
+  padding: 10px;
+  border-radius: 10px; /* Legger til avrundede hjørner for et penere utseende */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Legger til en skygge for dybde */
+}
