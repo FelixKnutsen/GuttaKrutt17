@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gruppe 17 - Hjemmeside</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li class="right"><a>Gruppe 17</a></li>
+      </ul>
+    </nav>
+    <div class="scrollFunction">
+      <div class="content">
+        <section class="students">
+          <div class="student">
+            <img src="pictures/felixpicture.jpg" alt="Felix bilde" />
+            <h1>Felix Knutsen</h1>
+            <p>
+              Felix er en ivrig student som har jobbet med flere
+              utvikling-prosjekter. Der har han lært om forskjellige
+              teknologier, frameworks og kodespråk. Han jobber som praktikant i
+              phonero hvor han jobber som fullstack utvikler. Felix er en aktiv
+              person som på fritiden bruker mye tid på fisking og å være med
+              venner.
+            </p>
+          </div>
+          <div class="student">
+            <img src="pictures/felixpicture.jpg" alt="Christian bilde" />
+            <h1>Christian Ålykkja</h1>
+            <p>
+              <!-- Legg til informasjon om Christian her -->
+            </p>
+          </div>
+          <div class="student">
+            <img src="pictures/felixpicture.jpg" alt="Adrian bilde" />
+            <h1>Adrian Viken</h1>
+            <p>
+              <!-- Legg til informasjon om Adrian her -->
+            </p>
+          </div>
+        </section>
+
+        <section class="group-info">
+          <div class="groupTag"><h2>Om Gruppen</h2></div>
+          <div class="info-category">
+            <h3>Gruppe 17</h3>
+            <p>
+              Vi er en gruppe dedikerte studenter som jobber sammen for å lære
+              og utvikle --- skriv mer her
+            </p>
+          </div>
+          <div class="info-category">
+            <h3>Prosjekt</h3>
+            <p>
+              Vårt prosjekt fokuserer på å utvikle en webapplikasjon som skal
+              --- skrive mer her
+            </p>
+          </div>
+          <div class="info-category">
+            <h3>Bedrift</h3>
+            <p>
+              Vi ønsker å jobbe med en bedrift som kan gi oss --- skrive mer her
+            </p>
+          </div>
+          <div class="info-category">
+            <h3>Ambisjonsnivå</h3>
+            <p>
+              Vårt mål er å levere et høykvalitets produkt som kan brukes av
+              mange, samtidig som vi forbedrer våre egne ferdigheter og
+              kunnskaper. --- skriv mer her
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbarHeight = document.querySelector(".navbar").offsetHeight;
+        document.querySelector(".scrollFunction").style.paddingTop =
+          navbarHeight + "px";
+      });
+    </script>
+  </body>
+</html>
