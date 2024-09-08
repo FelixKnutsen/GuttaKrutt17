@@ -6,13 +6,13 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: antiquewhite;
+  background: linear-gradient(135deg, #6b643b, #b6aa67);
   color: #333;
   overflow: hidden;
 }
 
 .navbar {
-  background-color: #333;
+  background: linear-gradient(135deg, #585331, #c2b56e);
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -42,6 +42,7 @@ body {
 
 .navbar ul li.right {
   margin-left: auto;
+  font-weight: 700;
 }
 
 .navbar ul li a:hover {
@@ -63,7 +64,7 @@ body {
 .student {
   text-align: center;
   width: 30%;
-  background-color: #f0f8ff;
+  background-color: #acc46a;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -96,11 +97,12 @@ body {
 }
 
 .info-category {
-  background-color: #ededed;
+  background-color: #c6d67f;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  font-size: 1.2em;
 }
 
 .info-category h3 {
@@ -123,10 +125,66 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin: 20px auto; /* Legger til auto for å sentrere horisontalt */
-  background-color: #aaaaaa; /* Velger en lys blå bakgrunnsfarge */
-  width: 20%; /* Setter bredden til 20% */
+  margin: 20px auto;
+  color: white;
+  width: 20%;
   padding: 10px;
-  border-radius: 10px; /* Legger til avrundede hjørner for et penere utseende */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Legger til en skygge for dybde */
+  border-radius: 10px;
+  font-size: 1.5em;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.hero-section {
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-section h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  background-color: #213f09;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+.cta-button:hover {
+  background-color: #36660f;
+}
+
+.features {
+  margin-top: -3.5rem;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 100%;
+}
+
+.feature {
+  text-align: center;
+  width: 30%;
+  background-color: #e0e0e0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1.2em;
+  line-height: 1.5;
 }
