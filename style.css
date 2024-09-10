@@ -129,10 +129,20 @@ body {
   animation: slideInUp 1s forwards;
 }
 
-.info-category:nth-child(2),
-.info-category:nth-child(3),
+.info-category:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.info-category:nth-child(3) {
+  animation-delay: 3.5s;
+}
+
 .info-category:nth-child(4) {
-  animation-delay: 2.7s;
+  animation-delay: 4s;
+}
+
+.info-category:nth-child(5) {
+  animation-delay: 4.5s;
 }
 
 .info-category h3 {
@@ -149,6 +159,7 @@ body {
 .scrollFunction {
   overflow-y: auto;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .groupTag {
