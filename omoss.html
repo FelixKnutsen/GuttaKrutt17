@@ -28,22 +28,22 @@
             </p>
           </div>
           <div class="student">
-              <img src="pictures/Christian.jpg" alt="Christian bilde" />
-              <h1>Christian Eieland Ålykkja</h1>
-              <p>
-                  <!-- Legg til informasjon om Christian her -->
-                  Christian er student som er meget glad i teknologi.
-                  Gjennom studiet har har han vært med på ulike utviklings-prosjekter,
-                  hvor han liker godt å arbeide mot interaktivt design som skal bidra til at flest mulige brukere kan bruke ett system.
-                  Ved siden av studiet så jobber han som parkeringsbetjent i Apcoa.
-                  Christian er en ivrig discgolf spiller, glad i fotball og være sosial med venner på fritiden.
-              </p>
+            <img src="pictures/Christian.jpg" alt="Christian bilde" />
+            <h1>Christian Eieland Ålykkja</h1>
+            <p>
+              Christian er student som er meget glad i teknologi. Gjennom
+              studiet har har han vært med på ulike utviklings-prosjekter, hvor
+              han liker godt å arbeide mot interaktivt design som skal bidra til
+              at flest mulige brukere kan bruke ett system. Ved siden av studiet
+              så jobber han som parkeringsbetjent i Apcoa. Christian er en ivrig
+              discgolf spiller, glad i fotball og være sosial med venner på
+              fritiden.
+            </p>
           </div>
           <div class="student">
             <img src="pictures/adrianpicture.jpg" alt="Adrian bilde" />
             <h1>Adrian Viken</h1>
             <p>
-              <!-- Legg til informasjon om Adrian her -->
               Adrian er en drivende student som elsker å drive med alt innen
               teknologi. Gjennom studiet har han deltatt i flere
               utvikling-prosjekter som har både styrket kompetanse innen
@@ -106,6 +106,31 @@
         const navbarHeight = document.querySelector(".navbar").offsetHeight;
         document.querySelector(".scrollFunction").style.paddingTop =
           navbarHeight + "px";
+
+        const observerOptions = {
+          root: null,
+          rootMargin: "0px",
+          threshold: 0.1,
+        };
+
+        const observerCallback = (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        };
+
+        const observer = new IntersectionObserver(
+          observerCallback,
+          observerOptions
+        );
+
+        const targets = document.querySelectorAll(".student, .info-category");
+        targets.forEach((target) => {
+          observer.observe(target);
+        });
       });
     </script>
   </body>
