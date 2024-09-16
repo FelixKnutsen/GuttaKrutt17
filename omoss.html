@@ -3,6 +3,7 @@
   <head>
     <title>Om oss - Gruppe 17</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="./pictures/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <nav class="navbar">
@@ -18,39 +19,87 @@
           <div class="student">
             <img src="pictures/felixpicture.jpg" alt="Felix bilde" />
             <h1>Felix Knutsen</h1>
-            <p>
-              Felix er en ivrig student som har jobbet med flere
-              utvikling-prosjekter. Der har han lært om forskjellige
-              teknologier, frameworks og kodespråk. Han jobber som praktikant i
-              phonero hvor han jobber som fullstack utvikler. Felix er en aktiv
-              person som på fritiden bruker mye tid på fisking og å være med
-              venner.
-            </p>
+            <div>
+              <p>Full Stack Developer</p>
+              <p>Universitetet i Agder</p>
+            </div>
+            <div class="overlay">
+              <p>
+                Felix er en lidenskapelig student som har jobbet med flere
+                utviklingsprosjekter. Han har lært om ulike teknologier,
+                rammeverk og programmeringsspråk. Han jobber som praktikant hos
+                Phonero som fullstack utvikler. Felix er en aktiv person som
+                bruker mye tid på fisking og å være sammen med venner på
+                fritiden.
+              </p>
+            </div>
           </div>
           <div class="student">
             <img src="pictures/Christian.jpg" alt="Christian bilde" />
             <h1>Christian Eieland Ålykkja</h1>
-            <p>
-              Christian er student som er meget glad i teknologi. Gjennom
-              studiet har har han vært med på ulike utviklings-prosjekter, hvor
-              han liker godt å arbeide mot interaktivt design som skal bidra til
-              at flest mulige brukere kan bruke ett system. Ved siden av studiet
-              så jobber han som parkeringsbetjent i Apcoa. Christian er en ivrig
-              discgolf spiller, glad i fotball og være sosial med venner på
-              fritiden.
-            </p>
+            <div>
+              <p>Front End Developer</p>
+              <p>Universitetet i Agder</p>
+            </div>
+            <div class="overlay">
+              <p>
+                Christian er en student som elsker teknologi. Gjennom studiene
+                har han deltatt i ulike utviklingsprosjekter, hvor han liker å
+                jobbe med interaktivt design som sikrer maksimal
+                brukertilgjengelighet. Ved siden av studiene jobber han som
+                parkeringsbetjent hos Apcoa. Christian er en ivrig
+                discgolf-spiller, elsker fotball og liker å være sosial med
+                venner på fritiden.
+              </p>
+            </div>
           </div>
           <div class="student">
             <img src="pictures/adrianpicture.jpg" alt="Adrian bilde" />
             <h1>Adrian Viken</h1>
-            <p>
-              Adrian er en drivende student som elsker å drive med alt innen
-              teknologi. Gjennom studiet har han deltatt i flere
-              utvikling-prosjekter som har både styrket kompetanse innen
-              utvikling og team-arbeid. På fritiden bruker han for det meste
-              tiden foran skjermen, men tar gjerne turen ut for å tilbringe
-              tiden med venner.
-            </p>
+            <div>
+              <p>Back End Developer</p>
+              <p>Universitetet i Agder</p>
+            </div>
+            <div class="overlay">
+              <p>
+                Adrian er en drivende student som elsker alt relatert til
+                teknologi. Gjennom studiene har han deltatt i flere
+                utviklingsprosjekter som har styrket ferdighetene hans innen
+                utvikling og teamarbeid. På fritiden bruker han mesteparten av
+                tiden foran skjermen, men liker også å gå ut for å tilbringe tid
+                med venner.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="social-links">
+          <div class="social">
+            <a href="https://www.linkedin.com/in/felixknutsen" target="_blank">
+              <img src="pictures/linkedin.png" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/felixknutsen" target="_blank">
+              <img src="pictures/github.png" alt="GitHub" />
+            </a>
+          </div>
+          <div class="social">
+            <a
+              href="https://www.linkedin.com/in/christianeieland"
+              target="_blank"
+            >
+              <img src="pictures/linkedin.png" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/christianeieland" target="_blank">
+              <img src="pictures/github.png" alt="GitHub" />
+            </a>
+          </div>
+          <div class="social">
+            <a href="https://www.linkedin.com/in/adrianviken" target="_blank">
+              <img src="pictures/linkedin.png" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/adrianviken" target="_blank">
+              <img src="pictures/github.png" alt="GitHub" />
+            </a>
           </div>
         </section>
 
@@ -131,6 +180,14 @@
         const targets = document.querySelectorAll(".student, .info-category");
         targets.forEach((target) => {
           observer.observe(target);
+        });
+
+        const students = document.querySelectorAll(".student");
+
+        students.forEach((student) => {
+          student.addEventListener("click", function () {
+            this.classList.toggle("expanded");
+          });
         });
       });
     </script>
