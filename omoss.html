@@ -33,7 +33,19 @@
                 fritiden.
               </p>
             </div>
+            <div class="social">
+              <a
+                href="https://www.linkedin.com/in/felix-knutsen/"
+                target="_blank"
+              >
+                <img src="pictures/linkedin.png" alt="LinkedIn" />
+              </a>
+              <a href="https://github.com/felixknutsen" target="_blank">
+                <img src="pictures/github.png" alt="GitHub" />
+              </a>
+            </div>
           </div>
+
           <div class="student">
             <img src="pictures/Christian.jpg" alt="Christian bilde" />
             <h1>Christian Eieland Ålykkja</h1>
@@ -51,6 +63,17 @@
                 discgolf-spiller, elsker fotball og liker å være sosial med
                 venner på fritiden.
               </p>
+            </div>
+            <div class="social">
+              <a
+                href="https://www.linkedin.com/in/christian-eieland-ålykkja-06b211258/"
+                target="_blank"
+              >
+                <img src="pictures/linkedin.png" alt="LinkedIn" />
+              </a>
+              <a href="https://github.com/Lordkissa97" target="_blank">
+                <img src="pictures/github.png" alt="GitHub" />
+              </a>
             </div>
           </div>
           <div class="student">
@@ -70,36 +93,17 @@
                 med venner.
               </p>
             </div>
-          </div>
-        </section>
-
-        <section class="social-links">
-          <div class="social">
-            <a href="https://www.linkedin.com/in/felixknutsen" target="_blank">
-              <img src="pictures/linkedin.png" alt="LinkedIn" />
-            </a>
-            <a href="https://github.com/felixknutsen" target="_blank">
-              <img src="pictures/github.png" alt="GitHub" />
-            </a>
-          </div>
-          <div class="social">
-            <a
-              href="https://www.linkedin.com/in/christianeieland"
-              target="_blank"
-            >
-              <img src="pictures/linkedin.png" alt="LinkedIn" />
-            </a>
-            <a href="https://github.com/christianeieland" target="_blank">
-              <img src="pictures/github.png" alt="GitHub" />
-            </a>
-          </div>
-          <div class="social">
-            <a href="https://www.linkedin.com/in/adrianviken" target="_blank">
-              <img src="pictures/linkedin.png" alt="LinkedIn" />
-            </a>
-            <a href="https://github.com/adrianviken" target="_blank">
-              <img src="pictures/github.png" alt="GitHub" />
-            </a>
+            <div class="social">
+              <a
+                href="https://www.linkedin.com/in/adrian-viken-208018210/"
+                target="_blank"
+              >
+                <img src="pictures/linkedin.png" alt="LinkedIn" />
+              </a>
+              <a href="https://github.com/Adriankv1" target="_blank">
+                <img src="pictures/github.png" alt="GitHub" />
+              </a>
+            </div>
           </div>
         </section>
 
@@ -151,45 +155,21 @@
         </section>
       </div>
     </div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const navbarHeight = document.querySelector(".navbar").offsetHeight;
-        document.querySelector(".scrollFunction").style.paddingTop =
-          navbarHeight + "px";
 
-        const observerOptions = {
-          root: null,
-          rootMargin: "0px",
-          threshold: 0.1,
-        };
+    <div id="student-popup" class="popup">
+      <div class="popup-content">
+        <span class="close">×</span>
+        <div class="popup-student">
+          <img id="popup-img" src="" alt="Student bilde" />
+          <h1 id="popup-name"></h1>
+          <div id="popup-role"></div>
+          <div id="popup-university"></div>
+          <p id="popup-description"></p>
+          <div class="social" id="popup-social"></div>
+        </div>
+      </div>
+    </div>
 
-        const observerCallback = (entries, observer) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-              observer.unobserve(entry.target);
-            }
-          });
-        };
-
-        const observer = new IntersectionObserver(
-          observerCallback,
-          observerOptions
-        );
-
-        const targets = document.querySelectorAll(".student, .info-category");
-        targets.forEach((target) => {
-          observer.observe(target);
-        });
-
-        const students = document.querySelectorAll(".student");
-
-        students.forEach((student) => {
-          student.addEventListener("click", function () {
-            this.classList.toggle("expanded");
-          });
-        });
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
