@@ -14,7 +14,36 @@ document.addEventListener("DOMContentLoaded", function () {
         "div:nth-child(3) p:nth-child(2)"
       ).textContent;
       const description = this.querySelector(".overlay p").textContent;
-      const socialLinks = this.querySelector(".social").innerHTML;
+
+      let socialLinks = "";
+      if (name === "Felix Knutsen") {
+        socialLinks = `
+          <a href="https://www.linkedin.com/in/felix-knutsen/" target="_blank">
+            <img src="pictures/linkedin.png" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/felixknutsen" target="_blank">
+            <img src="pictures/github.png" alt="GitHub" />
+          </a>
+        `;
+      } else if (name === "Christian Eieland Ålykkja") {
+        socialLinks = `
+          <a href="https://www.linkedin.com/in/christian-eieland-ålykkja-06b211258/" target="_blank">
+            <img src="pictures/linkedin.png" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/Lordkissa97" target="_blank">
+            <img src="pictures/github.png" alt="GitHub" />
+          </a>
+        `;
+      } else if (name === "Adrian Viken") {
+        socialLinks = `
+          <a href="https://www.linkedin.com/in/adrian-viken-208018210/" target="_blank">
+            <img src="pictures/linkedin.png" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/Adriankv1" target="_blank">
+            <img src="pictures/github.png" alt="GitHub" />
+          </a>
+        `;
+      }
 
       document.getElementById("popup-img").src = imgSrc;
       document.getElementById("popup-name").textContent = name;
