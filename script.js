@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
       } else if (name === "Christian Eieland Ålykkja") {
         socialLinks = `
-          <a href="https://www.linkedin.com/in/christian-eieland-ålykkja-06b211258/" target="_blank">
+          <a href="https://www.linkedin.com/in/christian-eieland-alykkja-06b211258/" target="_blank">
             <img src="pictures/linkedin.png" alt="LinkedIn" />
           </a>
           <a href="https://github.com/Lordkissa97" target="_blank">
