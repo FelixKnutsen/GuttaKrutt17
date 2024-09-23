@@ -36,9 +36,9 @@ body {
   font-weight: 700;
 }
 
-.navbar ul li a:hover {
-  background-color: #800000;
-}
+    .navbar ul li a:hover {
+        background-color: #53CBFB;
+    }
 
 .content {
   padding: 20px;
@@ -99,11 +99,11 @@ body {
   border: 2px solid #444;
 }
 
-.student h1 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  color: #800000;
-}
+    .student h1 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: #53CBFB;
+    }
 
 .student p {
   font-size: 1em;
@@ -152,11 +152,11 @@ body {
   animation-delay: 1.8s;
 }
 
-.info-category h3 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-  color: #800000;
-}
+    .info-category h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: #53CBFB;
+    }
 
 .info-category p {
   font-size: 1em;
@@ -192,13 +192,13 @@ body {
   padding: 100px 20px;
 }
 
-.welcomebox h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-  color: #800000;
-  opacity: 0;
-  animation: fadeIn 2s ease-in-out forwards;
-}
+    .welcomebox h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+        color: #53CBFB;
+        opacity: 0;
+        animation: fadeIn 2s ease-in-out forwards;
+    }
 
 .welcomebox p {
   font-size: 1.5em;
@@ -208,15 +208,15 @@ body {
 }
 
 .aboutUsButton {
-  background-color: #800000;
-  color: white;
-  padding: 15px 30px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 1.2em;
-  opacity: 0;
-  animation: bounce 1s infinite, slideInFromRight 1s forwards;
-  animation-delay: 1s;
+    background-color: #53CBFB;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    opacity: 0;
+    animation: bounce 1s infinite, slideInFromRight 1s forwards;
+    animation-delay: 1s;
 }
 
 .aboutUsButton:hover {
@@ -302,11 +302,11 @@ body {
   border: 2px solid #444;
 }
 
-.popup-student h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
-  color: #800000;
-}
+    .popup-student h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+        color: #53CBFB;
+    }
 
 .popup-student p {
   font-size: 1.2em;
