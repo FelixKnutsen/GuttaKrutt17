@@ -258,7 +258,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+    background-color: #53CBFB;
     overflow: hidden;
 }
 
@@ -305,7 +305,7 @@ body {
     .popup-student h1 {
         font-size: 2em;
         margin-bottom: 10px;
-        color: #53CBFB;
+        color: #800000;
     }
 
 .popup-student p {
