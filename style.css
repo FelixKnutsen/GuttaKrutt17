@@ -91,13 +91,13 @@ body {
   transform: rotateY(180deg);
 }
 
-.student img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  border: 2px solid #444;
-}
+    .student img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        border: 2px solid #53CBFB;
+    }
 
     .student h1 {
         font-size: 1.5em;
@@ -187,9 +187,9 @@ body {
 }
 
 .welcomebox {
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
+    color: #53CBFB;
+    text-align: center;
+    padding: 100px 20px;
 }
 
     .welcomebox h1 {
@@ -229,17 +229,17 @@ body {
 }
 
 .projectbox {
-  text-align: center;
-  width: 30%;
-  background-color: #2c2c2c;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 2px solid #444;
-  opacity: 0;
-  transform: translateX(-100%);
-  animation: slideIn 1s forwards;
-  line-height: 1.5;
+    text-align: center;
+    width: 30%;
+    background-color: #2c2c2c;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #53CBFB;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1s forwards;
+    line-height: 1.5;
 }
 
 .projectbox:nth-child(2) {
@@ -263,17 +263,17 @@ body {
 }
 
 .popup-content {
-  background-color: #2c2c2c;
-  margin: 10% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  max-width: 600px;
-  border-radius: 10px;
-  position: relative;
-  bottom: 15%;
-  color: rgb(232, 232, 232);
-  font-size: 1.2em;
+    background-color: #2c2c2c;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #53CBFB;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 15%;
+    color: rgb(232, 232, 232);
+    font-size: 1.2em;
 }
 
 .close {
@@ -294,18 +294,18 @@ body {
   text-align: center;
 }
 
-.popup-student img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  border: 2px solid #444;
-}
+    .popup-student img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        border: 2px solid #53CBFB;
+    }
 
     .popup-student h1 {
         font-size: 2em;
         margin-bottom: 10px;
-        color: #800000;
+        color: #53CBFB;
     }
 
 .popup-student p {
