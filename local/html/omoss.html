@@ -2,23 +2,16 @@
 <html>
   <head>
     <title>Om oss - Gruppe 17</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" href="./pictures/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/local/stylesheets/style.css" />
+    <link rel="icon" href="/local/pictures/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Hjem</a></li>
-        <li><a href="omoss.html">Om oss</a></li>
-        <li><a href="kontaktoss.html">Kontakt oss</a></li>
-        <li class="right"><a>Gruppe 17</a></li>
-      </ul>
-    </nav>
+    <div id="navbar-placeholder"></div>
     <div class="scrollFunction">
       <div class="content">
         <section class="students">
           <div class="student">
-            <img src="pictures/felixpicture.jpg" alt="Felix bilde" />
+            <img src="/local/pictures/felixpicture.jpg" alt="Felix bilde" />
             <h1>Felix Knutsen</h1>
             <div>
               <p>Full Stack Developer</p>
@@ -37,7 +30,7 @@
           </div>
 
           <div class="student">
-            <img src="pictures/Christian.jpg" alt="Christian bilde" />
+            <img src="/local/pictures/Christian.jpg" alt="Christian bilde" />
             <h1>Christian Eieland Ålykkja</h1>
             <div>
               <p>UX Designer</p>
@@ -56,7 +49,7 @@
             </div>
           </div>
           <div class="student">
-            <img src="pictures/adrianpicture.jpg" alt="Adrian bilde" />
+            <img src="/local/pictures/adrianpicture.jpg" alt="Adrian bilde" />
             <h1>Adrian Viken</h1>
             <div>
               <p>Full Stack Developer</p>
@@ -138,6 +131,14 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="/local/js/script.js"></script>
+    <script>
+      // Load the navbar.html content and inject it into the placeholder div
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+    </script>
   </body>
 </html>
