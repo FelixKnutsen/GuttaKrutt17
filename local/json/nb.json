@@ -23,19 +23,19 @@
         "role": "Full Stack Developer",
         "university": "Universitetet i Agder",
         "description": "Felix er en lidenskapelig student som har jobbet med flere utviklingsprosjekter. Han har lært om ulike teknologier, rammeverk og programmeringsspråk. Han jobber som praktikant hos Phonero som fullstack utvikler. Felix er en aktiv person som bruker mye tid på fisking og å være sammen med venner på fritiden.",
-        "image": "/local/pictures/felixpicture.jpg"
+        "image": "./local/pictures/felixpicture.jpg"
       },
       "Christian Eieland Ålykkja": {
         "role": "UX Designer",
         "university": "Universitetet i Agder",
         "description": "Christian er en student som elsker teknologi. Gjennom studiene har han deltatt i ulike utviklingsprosjekter, hvor han liker å jobbe med interaktivt design som sikrer maksimal brukertilgjengelighet. Ved siden av studiene jobber han som parkeringsbetjent hos Apcoa. Christian er en ivrig discgolf-spiller, elsker fotball og liker å være sosial med venner på fritiden.",
-        "image": "/local/pictures/christian.jpg"
+        "image": "./local/pictures/christian.jpg"
       },
       "Adrian Viken": {
         "role": "Full Stack Developer",
         "university": "Universitetet i Agder",
         "description": "Adrian er en drivende student som elsker alt relatert til teknologi. Gjennom studiene har han deltatt i flere utviklingsprosjekter som har styrket ferdighetene hans innen utvikling og teamarbeid. På fritiden bruker han mesteparten av tiden foran skjermen, men liker også å gå ut for å tilbringe tid med venner.",
-        "image": "/local/pictures/adrianpicture.jpg"
+        "image": "./local/pictures/adrianpicture.jpg"
       }
     },
     "group_info": {
