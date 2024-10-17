@@ -48,7 +48,7 @@
         .catch(error => console.error('Error loading navbar:', error));
 
 // Load content from nb.json and inject it into the HTML
-fetch('/local/json/nb.json')
+fetch('./local/json/nb.json')
   .then(response => response.json())
   .then(data => {
     const students = data.students;
@@ -118,6 +118,6 @@ fetch('/local/json/nb.json')
   })
     </script>
     
-<script src="/local/js/script.js"></script>
+<script src="./local/js/script.js"></script>
   </body>
 </html>
