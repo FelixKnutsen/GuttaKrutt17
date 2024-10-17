@@ -19,28 +19,28 @@ document.addEventListener("DOMContentLoaded", function () {
       if (name === "Felix Knutsen") {
         socialLinks = `
           <a href="https://www.linkedin.com/in/felix-knutsen/" target="_blank">
-            <img src="pictures/linkedin.png" alt="LinkedIn" />
+            <img src="./local/pictures/linkedin.png" alt="LinkedIn" />
           </a>
           <a href="https://github.com/felixknutsen" target="_blank">
-            <img src="pictures/github.png" alt="GitHub" />
+            <img src="./local/pictures/github.png" alt="GitHub" />
           </a>
         `;
       } else if (name === "Christian Eieland Ålykkja") {
         socialLinks = `
           <a href="https://www.linkedin.com/in/christian-eieland-alykkja-06b211258/" target="_blank">
-            <img src="pictures/linkedin.png" alt="LinkedIn" />
+             <img src="./local/pictures/linkedin.png" alt="LinkedIn" />
           </a>
           <a href="https://github.com/Lordkissa97" target="_blank">
-            <img src="pictures/github.png" alt="GitHub" />
+            <img src="./local/pictures/github.png" alt="GitHub" />
           </a>
         `;
       } else if (name === "Adrian Viken") {
         socialLinks = `
           <a href="https://www.linkedin.com/in/adrian-viken-208018210/" target="_blank">
-            <img src="pictures/linkedin.png" alt="LinkedIn" />
+             <img src="./local/pictures/linkedin.png" alt="LinkedIn" />
           </a>
           <a href="https://github.com/Adriankv1" target="_blank">
-            <img src="pictures/github.png" alt="GitHub" />
+           <img src="./local/pictures/github.png" alt="GitHub" />
           </a>
         `;
       }

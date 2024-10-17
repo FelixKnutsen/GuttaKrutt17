@@ -2,11 +2,13 @@
 <html>
   <head>
     <title>Om oss - Gruppe 17</title>
-    <link rel="stylesheet" type="text/css" href="/local/stylesheets/omOss.css" />
+    <link rel="stylesheet" type="text/css" href="/local/stylesheets/index.css" />
     <link rel="stylesheet" type="text/css" href="./../stylesheets/navbar.css" />
     <link rel="icon" href="/local/pictures/favicon.ico" type="image/x-icon" />
   </head>
   <body>
+
+
     <div id="navbar-placeholder"></div>
     <div class="scrollFunction">
       <div class="content">
@@ -132,14 +134,14 @@
       </div>
     </div>
 
-    <script src="/local/js/script.js"></script>
-    <script>
-      // Load the navbar.html content and inject it into the placeholder div
-      fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('navbar-placeholder').innerHTML = data;
-        });
-    </script>
+<script>
+
+   // Load the navbar.html content and inject it into the placeholder div
+fetch('./../pages/navbar.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('navbar-placeholder').innerHTML = data;
+  });
+            </script>
   </body>
 </html>
