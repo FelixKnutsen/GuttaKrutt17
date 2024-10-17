@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Gruppe 17 - Hjemmeside</title>
-    <link rel="stylesheet" type="text/css" href="local/stylesheets/index.css" />
-    <link rel="stylesheet" type="text/css" href="local/stylesheets/navbar.css" />
-    <link rel="icon" href="local/pictures/favicon.ico" type="image/x-icon" />
+    <title>Om oss - Gruppe 17</title>
+    <link rel="stylesheet" type="text/css" href="./local/stylesheets/index.css" />
+    <link rel="stylesheet" type="text/css" href="./local/stylesheets/navbar.css" />
+    <link rel="icon" href="./local/pictures/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <div id="navbar-placeholder"></div>
 
-    <div class="welcomebox">
-      <h1 id="welcome-title"></h1>
-      <p id="welcome-description"></p>
-      <a href="/local/pages/omoss.html" class="aboutUsButton" style="margin-bottom: -5rem" id="welcome-button"></a>
+    <div id="navbar-placeholder"></div>
+    <div class="scrollFunction">
+      <div class="content">
+        <!-- Students Section -->
+        <section class="students" id="students-section"></section>
+
+        <!-- Group Information Section -->
+        <section class="group-info">
+          <div class="info-category" id="group-section"></div>
+          <div class="info-category" id="project-section"></div>
+          <div class="info-category" id="company-section"></div>
+          <div class="info-category" id="ambition-section"></div>
+        </section>
+      </div>
     </div>
 
-    <div class="outsideProjectbox">
-      <div class="projectbox">
-        <h2 id="project-title-1"></h2>
-        <p id="project-description-1"></p>
-      </div>
-      <div class="projectbox">
-        <h2 id="project-title-2"></h2>
-        <p id="project-description-2"></p>
-      </div>
-      <div class="projectbox">
-        <h2 id="project-title-3"></h2>
-        <p id="project-description-3"></p>
+    <div id="student-popup" class="popup">
+      <div class="popup-content">
+        <span class="close">×</span>
+        <div class="popup-student">
+          <img id="popup-img" src="" alt="Student bilde" />
+          <h1 id="popup-name"></h1>
+          <div id="popup-role"></div>
+          <div id="popup-university"></div>
+          <p id="popup-description"></p>
+          <div class="social" id="popup-social"></div>
+        </div>
       </div>
     </div>
 
@@ -36,26 +44,60 @@
         .then(response => response.text())
         .then(data => {
           document.getElementById('navbar-placeholder').innerHTML = data;
-        });
+        })
+        .catch(error => console.error('Error loading navbar:', error));
 
-          fetch('./local/json/index.json')
-        .then(response => response.json())
-        .then(data => {
-          // Update welcome section
-          document.getElementById('welcome-title').textContent = data.welcome.title;
-          document.getElementById('welcome-description').textContent = data.welcome.description;
-          document.getElementById('welcome-button').textContent = data.welcome.buttonText;
+// Load content from nb.json and inject it into the HTML
+fetch('/local/json/nb.json')
+  .then(response => response.json())
+  .then(data => {
+    const students = data.students;
+    const groupInfo = data.group_info;
 
-          // Update project sections
-          document.getElementById('project-title-1').textContent = data.projects[0].title;
-          document.getElementById('project-description-1').textContent = data.projects[0].description;
+    // Inject students section
+    const studentsSection = document.getElementById('students-section');
+    
+    for (const studentName in students) {
+      if (students.hasOwnProperty(studentName)) {
+        const student = students[studentName];
+        const studentDiv = `
+          <div class="student">
+            <img src="${student.image}" alt="${studentName} bilde" />
+            <h1>${studentName}</h1>
+            <div>
+              <p>${student.role}</p>
+              <p>${student.university}</p>
+            </div>
+            <div class="overlay">
+              <p>${student.description}</p>
+            </div>
+          </div>
+        `;
+        studentsSection.innerHTML += studentDiv;
+      }
+    }
 
-          document.getElementById('project-title-2').textContent = data.projects[1].title;
-          document.getElementById('project-description-2').textContent = data.projects[1].description;
-
-          document.getElementById('project-title-3').textContent = data.projects[2].title;
-          document.getElementById('project-description-3').textContent = data.projects[2].description;
-        });
+    // Inject group info sections
+    document.getElementById('group-section').innerHTML = `
+      <h3>${groupInfo.group.title}</h3>
+      <p>${groupInfo.group.content}</p>
+    `;
+    document.getElementById('project-section').innerHTML = `
+      <h3>${groupInfo.project.title}</h3>
+      <p>${groupInfo.project.content}</p>
+    `;
+    document.getElementById('company-section').innerHTML = `
+      <h3>${groupInfo.company.title}</h3>
+      <p>${groupInfo.company.content}</p>
+    `;
+    document.getElementById('ambition-section').innerHTML = `
+      <h3>${groupInfo.ambition.title}</h3>
+      <p>${groupInfo.ambition.content}</p>
+    `;
+  })
+  .catch(error => console.error('Error loading nb.json:', error));
     </script>
+    
+<script src="/local/js/script.js"></script>
   </body>
 </html>

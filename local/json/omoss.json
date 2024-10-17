@@ -1,0 +1,25 @@
+// Load the navbar.html content and inject it into the placeholder div
+fetch('./../pages/navbar.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('navbar-placeholder').innerHTML = data;
+  });
+
+    fetch('./../json/index.json')
+  .then(response => response.json())
+  .then(data => {
+    // Update welcome section
+    document.getElementById('welcome-title').textContent = data.welcome.title;
+    document.getElementById('welcome-description').textContent = data.welcome.description;
+    document.getElementById('welcome-button').textContent = data.welcome.buttonText;
+
+    // Update project sections
+    document.getElementById('project-title-1').textContent = data.projects[0].title;
+    document.getElementById('project-description-1').textContent = data.projects[0].description;
+
+    document.getElementById('project-title-2').textContent = data.projects[1].title;
+    document.getElementById('project-description-2').textContent = data.projects[1].description;
+
+    document.getElementById('project-title-3').textContent = data.projects[2].title;
+    document.getElementById('project-description-3').textContent = data.projects[2].description;
+  });
