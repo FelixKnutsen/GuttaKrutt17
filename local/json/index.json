@@ -1,0 +1,22 @@
+{
+    "welcome": {
+      "title": "Velkommen til Gruppe 17",
+      "description": "Vi er en gruppe dedikerte studenter som jobber sammen for å lære og utvikle.",
+      "buttonText": "Les mer om oss"
+    },
+    "projects": [
+      {
+        "title": "Vårt Prosjekt",
+        "description": "Her vil vi skrive mer om prosjektet og problemstilling, og dens mål."
+      },
+      {
+        "title": "Vår Visjon",
+        "description": "Her vil vi skrive om visjonen bak prosjektet når vi har fått tildelt prosjektet."
+      },
+      {
+        "title": "Samarbeid",
+        "description": "Her vil vi skrive om samarbeidet mellom bedriften og gruppen når vi ingår et samarbeid."
+      }
+    ]
+  }
+  
