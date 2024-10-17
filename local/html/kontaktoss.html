@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/local/stylesheets/style.css" />
+    <link rel="icon" href="/local/pictures/favicon.ico" type="image/x-icon" />
+    <title>Kontakt oss</title>
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+      <div class="welcomebox">
+        <h1>Kontaktinformasjon</h1>
+      </div>
+      <div class="info-category">
+        <h3>Kontakt oss her</h1>
+        <p>Email: lorem@ipsum.com</p>
+        <p>Tlf: 12345678</p> 
+      </div>
+      <script>
+        // Load the navbar.html content and inject it into the placeholder div
+        fetch('navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+          });
+      </script>
+</body>
+</html>

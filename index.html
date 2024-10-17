@@ -2,25 +2,19 @@
 <html>
   <head>
     <title>Gruppe 17 - Hjemmeside</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" href="./pictures/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="local/stylesheets/style.css" />
+    <link rel="icon" href="local/pictures/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Hjem</a></li>
-        <li><a href="omoss.html">Om oss</a></li>
-        <li><a href="kontaktoss.html">Kontakt oss</a></li>
-        <li class="right"><a>Gruppe 17</a></li>
-      </ul>
-    </nav>
+    <div id="navbar-placeholder"></div>
+
     <div class="welcomebox">
       <h1>Velkommen til Gruppe 17</h1>
       <p>
         Vi er en gruppe dedikerte studenter som jobber sammen for å lære og
         utvikle.
       </p>
-      <a href="omoss.html" class="aboutUsButton" style="margin-bottom: -5rem"
+      <a href="local/html/omoss.html" class="aboutUsButton" style="margin-bottom: -5rem"
         >Les mer om oss</a
       >
     </div>
@@ -46,5 +40,14 @@
         </p>
       </div>
     </div>
+
+    <script>
+      // Load the navbar.html content and inject it into the placeholder div
+      fetch('local/html/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+    </script>
   </body>
 </html>
