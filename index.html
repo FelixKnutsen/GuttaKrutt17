@@ -31,13 +31,13 @@
 
     <script>
       // Load the navbar.html content and inject it into the placeholder div
-      fetch('local/pages/navbar.html')
+      fetch('./local/pages/navbar.html')
         .then(response => response.text())
         .then(data => {
           document.getElementById('navbar-placeholder').innerHTML = data;
         });
 
-          fetch('/local/json/index.json')
+          fetch('./local/json/index.json')
         .then(response => response.json())
         .then(data => {
           // Update welcome section
