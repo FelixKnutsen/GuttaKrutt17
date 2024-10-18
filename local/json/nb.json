@@ -1,60 +1,59 @@
 {
-    "welcome": {
-      "title": "Velkommen til Gruppe 17",
-      "description": "Vi er en gruppe dedikerte studenter som jobber sammen for å lære og utvikle.",
-      "buttonText": "Les mer om oss"
+  "welcome": {
+    "title": "Velkommen til Gruppe 17",
+    "description": "Vi er en gruppe dedikerte studenter som jobber sammen for å lære og utvikle.",
+    "buttonText": "Les mer om oss"
+  },
+  "projects": [
+    {
+      "title": "Vårt Prosjekt",
+      "description": "Her vil vi skrive mer om prosjektet og problemstilling, og dens mål."
     },
-    "projects": [
-      {
-        "title": "Vårt Prosjekt",
-        "description": "Her vil vi skrive mer om prosjektet og problemstilling, og dens mål."
-      },
-      {
-        "title": "Vår Visjon",
-        "description": "Her vil vi skrive om visjonen bak prosjektet når vi har fått tildelt prosjektet."
-      },
-      {
-        "title": "Samarbeid",
-        "description": "Her vil vi skrive om samarbeidet mellom bedriften og gruppen når vi inngår et samarbeid."
-      }
-    ],
-    "students": {
-      "Felix Knutsen": {
-        "role": "Full Stack Developer",
-        "university": "Universitetet i Agder",
-        "description": "Felix er en lidenskapelig student som har jobbet med flere utviklingsprosjekter. Han har lært om ulike teknologier, rammeverk og programmeringsspråk. Han jobber som praktikant hos Phonero som fullstack utvikler. Felix er en aktiv person som bruker mye tid på fisking og å være sammen med venner på fritiden.",
-        "image": "./local/pictures/felixpicture.jpg"
-      },
-      "Christian Eieland Ålykkja": {
-        "role": "UX Designer",
-        "university": "Universitetet i Agder",
-        "description": "Christian er en student som elsker teknologi. Gjennom studiene har han deltatt i ulike utviklingsprosjekter, hvor han liker å jobbe med interaktivt design som sikrer maksimal brukertilgjengelighet. Ved siden av studiene jobber han som parkeringsbetjent hos Apcoa. Christian er en ivrig discgolf-spiller, elsker fotball og liker å være sosial med venner på fritiden.",
-        "image": "./local/pictures/christianpicture.jpg"
-      },
-      "Adrian Viken": {
-        "role": "Full Stack Developer",
-        "university": "Universitetet i Agder",
-        "description": "Adrian er en drivende student som elsker alt relatert til teknologi. Gjennom studiene har han deltatt i flere utviklingsprosjekter som har styrket ferdighetene hans innen utvikling og teamarbeid. På fritiden bruker han mesteparten av tiden foran skjermen, men liker også å gå ut for å tilbringe tid med venner.",
-        "image": "./local/pictures/adrianpicture.jpg"
-      }
+    {
+      "title": "Vår Visjon",
+      "description": "Her vil vi skrive om visjonen bak prosjektet når vi har fått tildelt prosjektet."
     },
-    "group_info": {
-      "group": {
-        "title": "Gruppe 17",
-        "content": "Vi er en gruppe dedikerte studenter som jobber sammen for å lære og utvikle. Vårt mål er å skape innovative løsninger gjennom samarbeid og kreativitet. Vi tror på kontinuerlig læring og forbedring, og vi streber etter å anvende våre ferdigheter i praktiske prosjekter som kan ha en positiv innvirkning på samfunnet. Gjennom våre prosjekter får vi verdifull erfaring og innsikt i ulike teknologier og arbeidsmetoder, noe som forbereder oss for fremtidige utfordringer i arbeidslivet."
-      },
-      "project": {
-        "title": "Prosjekt",
-        "content": "Vi ønsker å finne en bedrift som kan tilby oss en oppgave som vil utfordre oss og gi oss muligheten til å vokse både faglig og personlig. Vi er spesielt interesserte i prosjekter som involverer ny teknologi, bærekraftige løsninger, eller som har en positiv samfunnseffekt."
-      },
-      "company": {
-        "title": "Bedrift",
-        "content": "Ideelt sett ser vi etter en bedrift som er innovativ og fremtidsrettet, og som er villig til å samarbeide tett med oss for å oppnå felles mål. Vi verdsetter et partnerskap hvor vi kan lære av hverandre og bidra til å løse reelle utfordringer."
-      },
-      "ambition": {
-        "title": "Ambisjonsnivå",
-        "content": "Vårt ambisjonsnivå er høyt, og vi er motiverte for å levere resultater av høy kvalitet. Vi er klare til å ta på oss komplekse utfordringer og jobbe hardt for å finne de beste løsningene. Vår gruppe består av medlemmer med variert bakgrunn og kompetanse, noe som gjør oss godt rustet til å håndtere ulike typer prosjekter."
-      }
+    {
+      "title": "Samarbeid",
+      "description": "Her vil vi skrive om samarbeidet mellom bedriften og gruppen når vi inngår et samarbeid."
+    }
+  ],
+  "students": {
+    "Felix Knutsen": {
+      "role": "Full Stack Developer",
+      "university": "Universitetet i Agder",
+      "description": "Felix er en lidenskapelig student som har jobbet med flere utviklingsprosjekter. Han har lært om ulike teknologier, rammeverk og programmeringsspråk. Han jobber som praktikant hos Phonero som fullstack utvikler. Felix er en aktiv person som bruker mye tid på fisking og å være sammen med venner på fritiden.",
+      "image": "./local/pictures/felixpicture.jpg"
+    },
+    "Christian Eieland Ålykkja": {
+      "role": "UX Designer",
+      "university": "Universitetet i Agder",
+      "description": "Christian er en student som elsker teknologi. Gjennom studiene har han deltatt i ulike utviklingsprosjekter, hvor han liker å jobbe med interaktivt design som sikrer maksimal brukertilgjengelighet. Ved siden av studiene jobber han som parkeringsbetjent hos Apcoa. Christian er en ivrig discgolf-spiller, elsker fotball og liker å være sosial med venner på fritiden.",
+      "image": "./local/pictures/christianpicture.jpg"
+    },
+    "Adrian Viken": {
+      "role": "Full Stack Developer",
+      "university": "Universitetet i Agder",
+      "description": "Adrian er en drivende student som elsker alt relatert til teknologi. Gjennom studiene har han deltatt i flere utviklingsprosjekter som har styrket ferdighetene hans innen utvikling og teamarbeid. På fritiden bruker han mesteparten av tiden foran skjermen, men liker også å gå ut for å tilbringe tid med venner.",
+      "image": "./local/pictures/adrianpicture.jpg"
+    }
+  },
+  "group_info": {
+    "group": {
+      "title": "Gruppe 17",
+      "content": "Vi er en gruppe dedikerte studenter som jobber sammen for å lære og utvikle. Vårt mål er å skape innovative løsninger gjennom samarbeid og kreativitet. Vi tror på kontinuerlig læring og forbedring, og vi streber etter å anvende våre ferdigheter i praktiske prosjekter som kan ha en positiv innvirkning på samfunnet. Gjennom våre prosjekter får vi verdifull erfaring og innsikt i ulike teknologier og arbeidsmetoder, noe som forbereder oss for fremtidige utfordringer i arbeidslivet."
+    },
+    "project": {
+      "title": "Prosjekt",
+      "content": "Vi ønsker å finne en bedrift som kan tilby oss en oppgave som vil utfordre oss og gi oss muligheten til å vokse både faglig og personlig. Vi er spesielt interesserte i prosjekter som involverer ny teknologi, bærekraftige løsninger, eller som har en positiv samfunnseffekt."
+    },
+    "company": {
+      "title": "Bedrift",
+      "content": "Ideelt sett ser vi etter en bedrift som er innovativ og fremtidsrettet, og som er villig til å samarbeide tett med oss for å oppnå felles mål. Vi verdsetter et partnerskap hvor vi kan lære av hverandre og bidra til å løse reelle utfordringer."
+    },
+    "ambition": {
+      "title": "Ambisjonsnivå",
+      "content": "Vårt ambisjonsnivå er høyt, og vi er motiverte for å levere resultater av høy kvalitet. Vi er klare til å ta på oss komplekse utfordringer og jobbe hardt for å finne de beste løsningene. Vår gruppe består av medlemmer med variert bakgrunn og kompetanse, noe som gjør oss godt rustet til å håndtere ulike typer prosjekter."
     }
   }
-  
+}
