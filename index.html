@@ -26,7 +26,6 @@
           <div class="groupTag"><h1>Om Gruppen</h1></div>
           <div class="info-category" id="group-section"></div>
           <div class="info-category" id="project-section"></div>
-          <div class="info-category" id="company-section"></div>
           <div class="info-category" id="ambition-section"></div>
         </section>
       </div>
@@ -109,15 +108,10 @@
             <h3>${groupInfo.project.title}</h3>
             <p>${groupInfo.project.content}</p>
           `;
-          document.getElementById("company-section").innerHTML = `
-            <h3>${groupInfo.company.title}</h3>
-            <p>${groupInfo.company.content}</p>
-          `;
           document.getElementById("ambition-section").innerHTML = `
             <h3>${groupInfo.ambition.title}</h3>
             <p>${groupInfo.ambition.content}</p>
           `;
-
           const studentDivs = document.querySelectorAll(".student");
           studentDivs.forEach((student) => {
             student.addEventListener("click", function () {
