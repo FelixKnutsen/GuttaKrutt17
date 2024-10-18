@@ -2,12 +2,19 @@
 <html>
   <head>
     <title>Om oss - Gruppe 17</title>
-    <link rel="stylesheet" type="text/css" href="./local/stylesheets/index.css" />
-    <link rel="stylesheet" type="text/css" href="./local/stylesheets/navbar.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./local/stylesheets/index.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./local/stylesheets/navbar.css"
+    />
     <link rel="icon" href="./local/pictures/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-
     <div id="navbar-placeholder"></div>
     <div class="scrollFunction">
       <div class="content">
@@ -16,6 +23,7 @@
 
         <!-- Group Information Section -->
         <section class="group-info">
+          <div class="groupTag"><h1>Om Gruppen</h1></div>
           <div class="info-category" id="group-section"></div>
           <div class="info-category" id="project-section"></div>
           <div class="info-category" id="company-section"></div>
@@ -33,91 +41,139 @@
           <div id="popup-role"></div>
           <div id="popup-university"></div>
           <p id="popup-description"></p>
-          <div class="social" id="popup-social"></div>
+          <div class="social" id="popup-social">
+            <a id="popup-github" href="#" target="_blank">
+              <img
+                src="./local/pictures/github.png"
+                alt="GitHub"
+                style="width: 30px; height: 30px; margin-right: 10px"
+              />
+            </a>
+            <a id="popup-linkedin" href="#" target="_blank">
+              <img
+                src="./local/pictures/linkedin.png"
+                alt="LinkedIn"
+                style="width: 30px; height: 30px"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
 
     <script>
       // Load the navbar.html content and inject it into the placeholder div
-      fetch('./local/pages/navbar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('navbar-placeholder').innerHTML = data;
+      fetch("./local/pages/navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
         })
-        .catch(error => console.error('Error loading navbar:', error));
+        .catch((error) => console.error("Error loading navbar:", error));
 
-// Load content from nb.json and inject it into the HTML
-fetch('./local/json/nb.json')
-  .then(response => response.json())
-  .then(data => {
-    const students = data.students;
-    const groupInfo = data.group_info;
+      // Load content from nb.json and inject it into the HTML
+      fetch("./local/json/nb.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const students = data.students;
+          const groupInfo = data.group_info;
 
-    // Inject students section
-    const studentsSection = document.getElementById('students-section');
-    
-    for (const studentName in students) {
-      if (students.hasOwnProperty(studentName)) {
-        const student = students[studentName];
-        const studentDiv = `
-          <div class="student">
-            <img src="${student.image}" alt="${studentName} bilde" />
-            <h1>${studentName}</h1>
-            <div>
-              <p>${student.role}</p>
-              <p>${student.university}</p>
-            </div>
-            <div class="overlay">
-              <p>${student.description}</p>
-            </div>
-          </div>
-        `;
-        studentsSection.innerHTML += studentDiv;
-      }
-    }
+          // Inject students section
+          const studentsSection = document.getElementById("students-section");
 
-    // Inject group info sections
-    document.getElementById('group-section').innerHTML = `
-      <h3>${groupInfo.group.title}</h3>
-      <p>${groupInfo.group.content}</p>
-    `;
-    document.getElementById('project-section').innerHTML = `
-      <h3>${groupInfo.project.title}</h3>
-      <p>${groupInfo.project.content}</p>
-    `;
-    document.getElementById('company-section').innerHTML = `
-      <h3>${groupInfo.company.title}</h3>
-      <p>${groupInfo.company.content}</p>
-    `;
-    document.getElementById('ambition-section').innerHTML = `
-      <h3>${groupInfo.ambition.title}</h3>
-      <p>${groupInfo.ambition.content}</p>
-    `;
-    const studentDivs = document.querySelectorAll(".student");
-    studentDivs.forEach((student) => {
-      student.addEventListener("click", function () {
-        const imgSrc = this.querySelector("img").src;
-        const name = this.querySelector("h1").textContent;
-        const role = this.querySelector("div:nth-child(3) p:nth-child(1)").textContent;
-        const university = this.querySelector("div:nth-child(3) p:nth-child(2)").textContent;
-        const description = this.querySelector(".overlay p").textContent;
-        
-        // Social links logic...
-        // Update popup content
-        document.getElementById("popup-img").src = imgSrc;
-        document.getElementById("popup-name").textContent = name;
-        document.getElementById("popup-role").textContent = role;
-        document.getElementById("popup-university").textContent = university;
-        document.getElementById("popup-description").textContent = description;
-        
-        // Show popup
-        document.getElementById("student-popup").style.display = "block";
-      });
-    });
-  })
+          for (const studentName in students) {
+            if (students.hasOwnProperty(studentName)) {
+              const student = students[studentName];
+              const studentDiv = `
+                <div class="student">
+                  <img src="${student.image}" alt="${studentName} bilde" />
+                  <h1>${studentName}</h1>
+                  <div>
+                    <p>${student.role}</p>
+                    <p>${student.university}</p>
+                  </div>
+                  <div class="overlay">
+                    <p>${student.description}</p>
+                  </div>
+                </div>
+              `;
+              studentsSection.innerHTML += studentDiv;
+            }
+          }
+
+          // Inject group info sections
+          document.getElementById("group-section").innerHTML = `
+            <h3>${groupInfo.group.title}</h3>
+            <p>${groupInfo.group.content}</p>
+          `;
+          document.getElementById("project-section").innerHTML = `
+            <h3>${groupInfo.project.title}</h3>
+            <p>${groupInfo.project.content}</p>
+          `;
+          document.getElementById("company-section").innerHTML = `
+            <h3>${groupInfo.company.title}</h3>
+            <p>${groupInfo.company.content}</p>
+          `;
+          document.getElementById("ambition-section").innerHTML = `
+            <h3>${groupInfo.ambition.title}</h3>
+            <p>${groupInfo.ambition.content}</p>
+          `;
+
+          const studentDivs = document.querySelectorAll(".student");
+          studentDivs.forEach((student) => {
+            student.addEventListener("click", function () {
+              const imgSrc = this.querySelector("img").src;
+              const name = this.querySelector("h1").textContent;
+              const role = this.querySelector(
+                "div:nth-child(3) p:nth-child(1)"
+              ).textContent;
+              const university = this.querySelector(
+                "div:nth-child(3) p:nth-child(2)"
+              ).textContent;
+              const description = this.querySelector(".overlay p").textContent;
+
+              // Update popup content
+              document.getElementById("popup-img").src = imgSrc;
+              document.getElementById("popup-name").textContent = name;
+              document.getElementById("popup-role").textContent = role;
+              document.getElementById("popup-university").textContent =
+                university;
+              document.getElementById("popup-description").textContent =
+                description;
+
+              // Set hardcoded GitHub and LinkedIn links
+              let githubLink, linkedinLink;
+
+              switch (name) {
+                case "Felix Knutsen":
+                  githubLink = "https://github.com/felixknutsen";
+                  linkedinLink = "https://www.linkedin.com/in/felix-knutsen";
+                  break;
+                case "Christian Eieland Ålykkja":
+                  githubLink = "https://github.com/Lordkissa97";
+                  linkedinLink =
+                    "https://www.linkedin.com/in/christian-eieland-alykkja-06b211258/";
+                  break;
+                case "Adrian Viken":
+                  githubLink = "https://github.com/Adriankv1";
+                  linkedinLink =
+                    "https://www.linkedin.com/in/adrian-viken-208018210/";
+                  break;
+                default:
+                  githubLink = "#"; // Fallback link if not found
+                  linkedinLink = "#"; // Fallback link if not found
+              }
+
+              // Update social links for GitHub and LinkedIn
+              document.getElementById("popup-github").href = githubLink;
+              document.getElementById("popup-linkedin").href = linkedinLink;
+
+              // Show popup
+              document.getElementById("student-popup").style.display = "block";
+            });
+          });
+        });
     </script>
-    
-<script src="./local/js/script.js"></script>
+
+    <script src="./local/js/script.js"></script>
   </body>
 </html>
